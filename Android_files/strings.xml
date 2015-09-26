@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SPP Pin Edison</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="bt_on">On</string>
+    <string name="bt_off">Off</string>
+    <string name="you_have_clicked_off">You have clicked Off</string>
+    <string name="you_have_clicked_on">You have clicked On</string>
+</resources>
