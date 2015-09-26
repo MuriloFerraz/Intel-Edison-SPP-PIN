@@ -1,7 +1,7 @@
 # Intel-Edison-SPP-PIN
 Conexão entre android e blietooth via bluetooth
 
-- exemplo de conexão Bluetooth entre android e Intel Edison, utilizando SPP (Serial Protocol Port).
+- exemplo de conexão Bluetooth entre android e Intel Edison, utilizando SPP (Serial Protocol Profile).
 
 - acesse para mais informações:
 
