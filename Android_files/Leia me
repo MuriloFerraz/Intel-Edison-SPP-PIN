@@ -3,7 +3,7 @@ Informações importantes
 
 No Arquivo:
 AndroidManifest.xml
-adicione as seguintes linhas:
+antes de "<aplication" , adicione as seguintes linhas:
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     
