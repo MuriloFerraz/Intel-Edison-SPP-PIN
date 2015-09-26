@@ -1,0 +1,56 @@
+#include <Wire.h>
+#include <Intel_Edison_BT_SPP.h>
+
+#include "rgb_lcd.h"
+
+const int colorR = 0;
+const int colorG = 0;
+const int colorB = 0;
+
+
+String letra;
+
+
+
+Intel_Edison_BT_SPP spp = Intel_Edison_BT_SPP();
+
+rgb_lcd lcd;
+
+
+
+void setup() {
+	Serial.begin(115200);
+	Serial.println("Intel Edison BT SPP test!");
+
+  lcd.begin(16, 2);
+  lcd.setRGB(255, colorG, colorB);
+  lcd.print("#IntelMaker");
+  lcd.setCursor(0, 1);
+  lcd.print("Waiting for BT");
+
+  
+	spp.open();
+}
+
+void loop() {
+
+	ssize_t size = spp.read();
+
+	if (size != -1) {
+
+  lcd.setRGB(colorR, colorG, 255);
+  lcd.clear();
+  lcd.print("Bluetooth is OK");
+  lcd.setCursor(0, 1);
+  
+    letra = (spp.getBuf());
+		Serial.println(spp.getBuf());
+
+   lcd.print(letra);
+
+   
+	} else {
+		// Well, some error here 
+		delay(500);
+	}
+}
