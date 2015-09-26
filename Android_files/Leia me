@@ -6,5 +6,11 @@ AndroidManifest.xml
 antes de "<aplication" , adicione as seguintes linhas:
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+- Atenção
+
+Para o app funcionar, é preciso que o Intel Edison esteje já configurado, pareado e conectado (pelo atilitário nativo do android)
+ 
+ - O app só funciona (por enquanto) com o edison cujo o MAC esteja no *.java do app
     
     
